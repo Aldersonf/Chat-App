@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="Login_Grid" alignment="center" hgap="10" prefHeight="654.0" prefWidth="440.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat_App.LoginController">
+    <stylesheets>
+        <URL value="@stylesheet.css" />
+    </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="620.0" prefWidth="420.0" GridPane.columnIndex="1">
+         <children>
+            <ImageView fx:id="UCBC_Logo" fitHeight="118.0" fitWidth="379.0" layoutX="3.0" layoutY="8.0">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="Username_Field" alignment="TOP_CENTER" focusColor="#00477f" layoutX="40.0" layoutY="210.0" maxWidth="350.0" minWidth="221.0" prefHeight="41.0" prefWidth="310.0" promptText="" unFocusColor="#54a0d4">
+               <font>
+                  <Font name="FontAwesome" size="20.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="Password_Field" alignment="TOP_CENTER" focusColor="#00477f" layoutX="40.0" layoutY="266.0" maxWidth="310.0" minWidth="261.0" prefHeight="41.0" prefWidth="310.0" promptText="" unFocusColor="#54a0d4">
+               <font>
+                  <Font name="FontAwesome" size="20.0" />
+               </font></JFXPasswordField>
+            <JFXButton fx:id="Login_Button" layoutX="113.0" layoutY="532.0" onAction="#handleButtonAction" prefHeight="68.0" prefWidth="178.0" ripplerFill="#54a0d4" style="-fx-background-color: #00477F;" text="LOGIN" textFill="WHITE" />
+            <JFXTextField fx:id="Hostname_Feild" alignment="TOP_CENTER" focusColor="#00477f" layoutX="38.0" layoutY="380.0" maxWidth="350.0" minWidth="221.0" prefHeight="41.0" prefWidth="310.0" promptText="Host Name" unFocusColor="#54a0d4">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="Port_Field" alignment="TOP_CENTER" focusColor="#00477f" layoutX="38.0" layoutY="429.0" maxWidth="350.0" minWidth="221.0" prefHeight="41.0" prefWidth="310.0" promptText="Port" unFocusColor="#54a0d4">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <Label fx:id="LabelServerDetials" alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="346.0" text="Server Details">
+               <font>
+                  <Font size="23.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="141.0" text="CHAT APP LOGIN" textFill="#54a0d4">
+               <font>
+                  <Font name="MS PGothic" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
